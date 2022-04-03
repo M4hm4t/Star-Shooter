@@ -19,6 +19,7 @@ public class ScreenBoundaries : MonoBehaviour
       
         Vector3 pos = Camera.main.WorldToViewportPoint(transform.position);
         pos.x = Mathf.Clamp(pos.x, 0.05f, 0.95f);
+        pos.y = Mathf.Clamp(pos.y, 0.09f, 0.95f);
         pos.x = Mathf.Clamp01(pos.x);
         pos.y = Mathf.Clamp01(pos.y);
         transform.position = Camera.main.ViewportToWorldPoint(pos);

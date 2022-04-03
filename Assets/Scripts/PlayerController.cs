@@ -6,7 +6,7 @@ public class PlayerController : Shape
 {
     public ProjectileController projectilePrefab;
     private float currentTime=0;
-    private float step = 0.2f;
+    private float step = 0.5f;
 
     //private void Awake()
     //{
@@ -15,7 +15,7 @@ public class PlayerController : Shape
 
     IEnumerator AutoShooting () //otomatik ateş
     {
-        while(currentTime<100000)
+        while(currentTime<1000000000000)
         {
             yield return new WaitForSeconds(step);
             currentTime += step;

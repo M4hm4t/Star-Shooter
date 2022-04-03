@@ -41,10 +41,7 @@ public class GameSceneController : MonoBehaviour
             player.SetColor(Color.red); 
         }
 
-        if(Input.GetKeyUp(KeyCode.Space))
-        {
-            player.SetColor(Color.yellow); 
-        }
+
     }
 
     private IEnumerator SpawnEnemies()
